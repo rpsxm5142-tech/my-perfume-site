@@ -1,144 +1,121 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">\>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chérie de Cognac</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chérie de Cognac | Niche Perfume by LEO (강지혁)</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Noto+Sans+KR:wght@300&display=swap');
-
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Noto+Serif+KR:wght@300;500&display=swap');
     body {
       margin: 0;
-      font-family: 'Noto Sans KR', sans-serif;
-      background: radial-gradient(circle at top, #0d0d0d, #000);
+      font-family: 'Noto Serif KR', serif;
       color: #f5f5f5;
-      text-align: center;
+      background-color: #0c0b09;
       overflow-x: hidden;
     }
-
-    .hero {
-      background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1610915037235-7b6a9d49c56f?auto=format&fit=crop&w=1800&q=80');
-      background-size: cover;
-      background-position: center;
-      padding: 180px 20px;
-      color: #d4af37;
+    header {
+      height: 100vh;
+      background: linear-gradient(rgba(12, 11, 9, 0.6), rgba(12, 11, 9, 0.6)), url('https://images.unsplash.com/photo-1617111631438-98e33b3eaa46?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
     }
-
     h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 4rem;
+      font-size: 3.5em;
       margin: 0;
-      letter-spacing: 3px;
+      letter-spacing: 2px;
     }
-
-    p.subtitle {
-      color: #c0a060;
-      font-size: 1.2rem;
-      margin-top: 10px;
+    h2 {
+      font-weight: 300;
+      font-size: 1.2em;
+      color: #d9b36a;
+      margin-top: 0.5em;
     }
-
-    .story {
-      max-width: 750px;
-      margin: 80px auto;
-      font-size: 1.1rem;
-      color: #ddd;
-      line-height: 1.9;
+    section {
+      max-width: 900px;
+      margin: 100px auto;
+      text-align: center;
+      line-height: 1.8;
       padding: 0 20px;
     }
-
-    .notes-section {
+    .notes {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 30px;
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: 0 auto;
+      margin-top: 60px;
     }
-
-    .note-card {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(212, 175, 55, 0.4);
-      border-radius: 20px;
-      padding: 30px;
-      transition: all 0.3s ease;
-    }
-
-    .note-card:hover {
-      background: rgba(212, 175, 55, 0.1);
-      transform: translateY(-5px);
-    }
-
-    .note-card h2 {
-      font-family: 'Playfair Display', serif;
-      color: #d4af37;
-      margin-bottom: 10px;
-    }
-
-    .note-card img {
-      width: 100%;
-      border-radius: 10px;
-      margin-bottom: 15px;
-      opacity: 0.9;
-    }
-
-    .note-card p {
-      font-size: 0.95rem;
-      color: #ccc;
-      line-height: 1.6;
-    }
-
-    .footer {
-      margin-top: 80px;
+    .note {
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
       padding: 20px;
-      font-style: italic;
-      color: #888;
+      backdrop-filter: blur(5px);
     }
-
-    audio { display: none; }
+    .note img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    footer {
+      text-align: center;
+      padding: 40px 0;
+      color: #999;
+      font-size: 0.9em;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+    footer span {
+      color: #d9b36a;
+    }
+    audio {
+      display: none;
+    }
   </style>
 </head>
 <body>
   <audio autoplay loop>
-    <source src="https://cdn.pixabay.com/audio/2022/03/09/audio_2a4f6f.mp3" type="audio/mp3">
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/09/audio_9eec859e40.mp3?filename=fireplace-ambient-110608.mp3" type="audio/mpeg">
   </audio>
 
-  <section class="hero">
+  <header>
     <h1>Chérie de Cognac</h1>
-    <p class="subtitle">달콤함 속에 잠긴 깊이, 사랑처럼 남는 잔향</p>
-  </section>
+    <h2>Niche Perfume by LEO (강지혁)</h2>
+  </header>
 
-  <section class="story">
+  <section>
+    <h2>About the Perfume</h2>
     <p>
-      한 모금의 체리 리큐르, 그리고 오크 배럴에 잠든 꼬냑.<br>
-      달콤함과 깊이가 맞닿는 순간, 붉은 빛의 향이 깨어난다.<br>
-      <strong>Chérie de Cognac</strong>은 사랑의 여운처럼 부드럽고, 빗방울처럼 투명하며,<br>
-      마지막엔 나무의 숨결로 기억된다.<br><br>
-      체리의 생동감, 장미와 자스민의 우아함, 그리고 패츌리와 베티버의 깊은 숨결이
-      하나의 서사로 이어진다. 당신의 시간 속에 머무는, 단 한 잔의 향.
+      한 모금의 체리 리큐르, 그리고 오크 배럴에 잠든 꼬냑.  
+      달콤함과 깊이가 맞닿는 순간, 붉은 빛의 향이 깨어난다.  
+      <strong>Chérie de Cognac</strong>은 사랑의 여운처럼 부드럽고,  
+      빗방울처럼 투명하며, 마지막엔 나무의 숨결로 기억된다.  
+      당신의 시간 속에 남는, 한 잔의 향.
     </p>
-  </section>
 
-  <section class="notes-section">
-    <div class="note-card">
-      <img src="https://images.unsplash.com/photo-1563911325945-1b22b4c7bda7?auto=format&fit=crop&w=800&q=80" alt="Top Note">
-      <h2>Top Note</h2>
-      <p>체리, 베르가못, 포레스트 — 첫 향은 달콤하고 청량하다. 붉은 체리의 과즙이 터지듯, 숲의 공기가 함께 퍼진다.</p>
-    </div>
-
-    <div class="note-card">
-      <img src="https://images.unsplash.com/photo-1530639834082-05bafb67f6d6?auto=format&fit=crop&w=800&q=80" alt="Middle Note">
-      <h2>Middle Note</h2>
-      <p>로즈 드 메이, 자스민, 레인, 꼬냑, 그린티 — 촉촉한 장미와 비 내린 잎사귀의 감촉 위로, 한 잔의 꼬냑이 잔잔히 흐른다.</p>
-    </div>
-
-    <div class="note-card">
-      <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=800&q=80" alt="Base Note">
-      <h2>Base Note</h2>
-      <p>패츌리, 베티버, 통카빈, 구아이악우드 — 깊고 따뜻한 여운. 나무결과 같은 부드러운 흔적이 오래도록 남는다.</p>
+    <div class="notes">
+      <div class="note">
+        <img src="https://images.unsplash.com/photo-1573140247632-f8fd74997d5c?auto=format&fit=crop&w=600&q=80" alt="체리와 베르가못">
+        <h3>Top Notes</h3>
+        <p>체리, 포레스트, 베르가못 — 신선함과 달콤함이 공존하는 첫인상.</p>
+      </div>
+      <div class="note">
+        <img src="https://images.unsplash.com/photo-1600250395179-98f32cddf8c7?auto=format&fit=crop&w=600&q=80" alt="로즈 드 메이와 자스민">
+        <h3>Heart Notes</h3>
+        <p>로즈 드 메이, 자스민, 레인, 꼬냑, 그린티 — 비 오는 오후의 장밋빛 잔향.</p>
+      </div>
+      <div class="note">
+        <img src="https://images.unsplash.com/photo-1556228578-5d6e0cbd7e1e?auto=format&fit=crop&w=600&q=80" alt="패츌리와 통카빈">
+        <h3>Base Notes</h3>
+        <p>패츌리, 베티버, 통카빈, 구아이악우드 — 따뜻한 여운과 깊은 우드의 조화.</p>
+      </div>
     </div>
   </section>
 
-  <p class="footer">“Chérie de Cognac – A story poured in scent.”</p>
+  <footer>
+    Designed with passion by <span>LEO (강지혁)</span><br>
+    © 2025 Chérie de Cognac. All Rights Reserved.
+  </footer>
 </body>
 </html>
-
