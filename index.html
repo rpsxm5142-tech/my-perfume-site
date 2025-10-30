@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chérie de Cognac | Niche Perfume by LEO (강지혁)</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Noto+Serif+KR:wght@300;500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Noto+Serif+KR:wght@400;600&display=swap');
     body {
       margin: 0;
       font-family: 'Noto Serif KR', serif;
@@ -15,32 +15,48 @@
     }
     header {
       height: 100vh;
-      background: linear-gradient(rgba(12, 11, 9, 0.6), rgba(12, 11, 9, 0.6)), url('https://cdn.pixabay.com/photo/2016/11/21/15/46/perfume-1845750_1280.jpg') center/cover no-repeat;
+      background: linear-gradient(rgba(12, 11, 9, 0.65), rgba(12, 11, 9, 0.85)),
+                  url('https://cdn.pixabay.com/photo/2016/11/21/15/46/perfume-1845750_1280.jpg') center/cover no-repeat;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       text-align: center;
-      position: relative;
     }
     h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 3.5em;
-      margin: 0;
+      font-size: 3em;
       letter-spacing: 2px;
+      margin: 0;
+      color: #fff;
     }
     h2 {
-      font-weight: 300;
       font-size: 1.2em;
       color: #d9b36a;
-      margin-top: 0.5em;
+      font-weight: 400;
+      margin-top: 10px;
+    }
+    button {
+      margin-top: 25px;
+      background: transparent;
+      border: 1px solid #d9b36a;
+      color: #d9b36a;
+      padding: 10px 25px;
+      border-radius: 25px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    button:hover {
+      background: #d9b36a;
+      color: #0c0b09;
     }
     section {
       max-width: 900px;
-      margin: 100px auto;
+      margin: 80px auto;
+      padding: 0 20px;
       text-align: center;
       line-height: 1.8;
-      padding: 0 20px;
     }
     .notes {
       display: grid;
@@ -49,10 +65,10 @@
       margin-top: 60px;
     }
     .note {
-      background-color: rgba(255, 255, 255, 0.05);
+      background: rgba(255,255,255,0.05);
       border-radius: 12px;
       padding: 20px;
-      backdrop-filter: blur(5px);
+      backdrop-filter: blur(6px);
     }
     .note img {
       width: 100%;
@@ -62,53 +78,49 @@
     footer {
       text-align: center;
       padding: 40px 0;
-      color: #999;
       font-size: 0.9em;
+      color: #999;
       border-top: 1px solid rgba(255,255,255,0.1);
     }
-    footer span {
-      color: #d9b36a;
-    }
-    audio {
-      display: none;
-    }
+    footer span { color: #d9b36a; }
   </style>
 </head>
 <body>
-  <audio autoplay loop>
-    <source src="https://cdn.pixabay.com/download/audio/2022/03/09/audio_9eec859e40.mp3?filename=fireplace-ambient-110608.mp3" type="audio/mpeg">
-  </audio>
 
   <header>
     <h1>Chérie de Cognac</h1>
     <h2>Niche Perfume by LEO (강지혁)</h2>
+    <button onclick="playFire()">🔊 Listen</button>
   </header>
+
+  <audio id="fireSound" loop>
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/09/audio_9eec859e40.mp3?filename=fireplace-ambient-110608.mp3" type="audio/mpeg">
+  </audio>
 
   <section>
     <h2>About the Perfume</h2>
     <p>
-      한 모금의 체리 리큐르, 그리고 오크 배럴에 잠든 꼬냑.  
-      달콤함과 깊이가 맞닿는 순간, 붉은 빛의 향이 깨어난다.  
-      <strong>Chérie de Cognac</strong>은 사랑의 여운처럼 부드럽고,  
-      빗방울처럼 투명하며, 마지막엔 나무의 숨결로 기억된다.  
-      당신의 시간 속에 남는, 한 잔의 향.
+      체리 리큐르와 꼬냑의 따스한 잔향,  
+      그리고 비 내린 장미의 투명한 숨결.  
+      <strong>Chérie de Cognac</strong>은 시간과 감정을 향으로 녹여낸,  
+      감각적인 니치 퍼퓸입니다.
     </p>
 
     <div class="notes">
       <div class="note">
         <img src="https://images.unsplash.com/photo-1573140247632-f8fd74997d5c?auto=format&fit=crop&w=600&q=80" alt="체리와 베르가못">
         <h3>Top Notes</h3>
-        <p>체리, 포레스트, 베르가못 — 신선함과 달콤함이 공존하는 첫인상.</p>
+        <p>체리, 포레스트, 베르가못 — 청량한 달콤함의 첫인상.</p>
       </div>
       <div class="note">
         <img src="https://images.unsplash.com/photo-1600250395179-98f32cddf8c7?auto=format&fit=crop&w=600&q=80" alt="로즈 드 메이와 자스민">
         <h3>Heart Notes</h3>
-        <p>로즈 드 메이, 자스민, 레인, 꼬냑, 그린티 — 비 오는 오후의 장밋빛 잔향.</p>
+        <p>로즈 드 메이, 자스민, 꼬냑, 레인 — 비 내린 오후의 장밋빛 잔향.</p>
       </div>
       <div class="note">
         <img src="https://images.unsplash.com/photo-1556228578-5d6e0cbd7e1e?auto=format&fit=crop&w=600&q=80" alt="패츌리와 통카빈">
         <h3>Base Notes</h3>
-        <p>패츌리, 베티버, 통카빈, 구아이악우드 — 따뜻한 여운과 깊은 우드의 조화.</p>
+        <p>패츌리, 베티버, 통카빈, 구아이악우드 — 깊고 따스한 마무리.</p>
       </div>
     </div>
   </section>
@@ -117,6 +129,13 @@
     Designed with passion by <span>LEO (강지혁)</span><br>
     © 2025 Chérie de Cognac. All Rights Reserved.
   </footer>
+
+  <script>
+    function playFire() {
+      const fire = document.getElementById("fireSound");
+      fire.play();
+    }
+  </script>
+
 </body>
 </html>
-
