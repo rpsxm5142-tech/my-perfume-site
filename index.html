@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">\>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chérie de Cognac</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Noto+Sans+KR:wght@300&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Noto Sans KR', sans-serif;
+      background: radial-gradient(circle at top, #0d0d0d, #000);
+      color: #f5f5f5;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    .hero {
+      background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1610915037235-7b6a9d49c56f?auto=format&fit=crop&w=1800&q=80');
+      background-size: cover;
+      background-position: center;
+      padding: 180px 20px;
+      color: #d4af37;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      margin: 0;
+      letter-spacing: 3px;
+    }
+
+    p.subtitle {
+      color: #c0a060;
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    .story {
+      max-width: 750px;
+      margin: 80px auto;
+      font-size: 1.1rem;
+      color: #ddd;
+      line-height: 1.9;
+      padding: 0 20px;
+    }
+
+    .notes-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .note-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(212, 175, 55, 0.4);
+      border-radius: 20px;
+      padding: 30px;
+      transition: all 0.3s ease;
+    }
+
+    .note-card:hover {
+      background: rgba(212, 175, 55, 0.1);
+      transform: translateY(-5px);
+    }
+
+    .note-card h2 {
+      font-family: 'Playfair Display', serif;
+      color: #d4af37;
+      margin-bottom: 10px;
+    }
+
+    .note-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      opacity: 0.9;
+    }
+
+    .note-card p {
+      font-size: 0.95rem;
+      color: #ccc;
+      line-height: 1.6;
+    }
+
+    .footer {
+      margin-top: 80px;
+      padding: 20px;
+      font-style: italic;
+      color: #888;
+    }
+
+    audio { display: none; }
+  </style>
+</head>
+<body>
+  <audio autoplay loop>
+    <source src="https://cdn.pixabay.com/audio/2022/03/09/audio_2a4f6f.mp3" type="audio/mp3">
+  </audio>
+
+  <section class="hero">
+    <h1>Chérie de Cognac</h1>
+    <p class="subtitle">달콤함 속에 잠긴 깊이, 사랑처럼 남는 잔향</p>
+  </section>
+
+  <section class="story">
+    <p>
+      한 모금의 체리 리큐르, 그리고 오크 배럴에 잠든 꼬냑.<br>
+      달콤함과 깊이가 맞닿는 순간, 붉은 빛의 향이 깨어난다.<br>
+      <strong>Chérie de Cognac</strong>은 사랑의 여운처럼 부드럽고, 빗방울처럼 투명하며,<br>
+      마지막엔 나무의 숨결로 기억된다.<br><br>
+      체리의 생동감, 장미와 자스민의 우아함, 그리고 패츌리와 베티버의 깊은 숨결이
+      하나의 서사로 이어진다. 당신의 시간 속에 머무는, 단 한 잔의 향.
+    </p>
+  </section>
+
+  <section class="notes-section">
+    <div class="note-card">
+      <img src="https://images.unsplash.com/photo-1563911325945-1b22b4c7bda7?auto=format&fit=crop&w=800&q=80" alt="Top Note">
+      <h2>Top Note</h2>
+      <p>체리, 베르가못, 포레스트 — 첫 향은 달콤하고 청량하다. 붉은 체리의 과즙이 터지듯, 숲의 공기가 함께 퍼진다.</p>
+    </div>
+
+    <div class="note-card">
+      <img src="https://images.unsplash.com/photo-1530639834082-05bafb67f6d6?auto=format&fit=crop&w=800&q=80" alt="Middle Note">
+      <h2>Middle Note</h2>
+      <p>로즈 드 메이, 자스민, 레인, 꼬냑, 그린티 — 촉촉한 장미와 비 내린 잎사귀의 감촉 위로, 한 잔의 꼬냑이 잔잔히 흐른다.</p>
+    </div>
+
+    <div class="note-card">
+      <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=800&q=80" alt="Base Note">
+      <h2>Base Note</h2>
+      <p>패츌리, 베티버, 통카빈, 구아이악우드 — 깊고 따뜻한 여운. 나무결과 같은 부드러운 흔적이 오래도록 남는다.</p>
+    </div>
+  </section>
+
+  <p class="footer">“Chérie de Cognac – A story poured in scent.”</p>
+</body>
+</html>
+
