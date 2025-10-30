@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chérie de Cognac</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Noto+Sans+KR:wght@300&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Noto Sans KR', sans-serif;
+      background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat fixed;
+      color: #f8f5e9;
+      text-align: center;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 80px 20px 50px;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      color: #e8c06d;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #c9a44d;
+      font-size: 1rem;
+      letter-spacing: 1px;
+    }
+
+    button {
+      background: transparent;
+      border: 1px solid #c9a44d;
+      color: #c9a44d;
+      border-radius: 50px;
+      padding: 8px 20px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #c9a44d;
+      color: black;
+    }
+
+    .about {
+      margin: 50px auto;
+      max-width: 700px;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+      line-height: 1.8;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+      margin: 60px auto 100px;
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.7);
+      border: 1px solid #c9a44d;
+      border-radius: 12px;
+      width: 270px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      color: #e8c06d;
+      margin-bottom: 10px;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.7);
+      color: #aaa;
+      font-size: 0.8rem;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Chérie de Cognac</h1>
+    <h2>Niche Perfume by LEO (강지현)</h2>
+    <button onclick="toggleSound()">🔊 Listen</button>
+  </header>
+
+  <div class="about">
+    <p>
+      체리 리큐르의 달콤함, 코냑의 따스한 잔향, 그리고 비 내린 밤의 투명한 숨결.  
+      <strong>Chérie de Cognac</strong>은 감정과 시간의 향을 담은 니치 퍼퓸입니다.
+    </p>
+  </div>
+
+  <section class="cards">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1524592924082-4f50ce8a4b8f?auto=format&fit=crop&w=800&q=80" alt="Top Notes">
+      <h3>Top Notes</h3>
+      <p>체리, 베르가못, 포레스트 미스트 — 달콤함과 신선함의 조화.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Heart Notes">
+      <h3>Heart Notes</h3>
+      <p>로즈 드 메이, 자스민, 레인 — 부드럽고 따뜻한 중심의 향.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1499084732479-de2c02d45fc4?auto=format&fit=crop&w=800&q=80" alt="Base Notes">
+      <h3>Base Notes</h3>
+      <p>패출리, 베티버, 통카빈 — 깊고 감각적인 여운.</p>
+    </div>
+  </section>
+
+  <footer>© 2025 Chérie de Cognac — Crafted with passion by LEO.</footer>
+
+  <audio id="bgAudio" loop>
+    <source src="https://cdn.pixabay.com/audio/2022/03/15/audio_9f6b81fdb8.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    const audio = document.getElementById('bgAudio');
+    let isPlaying = false;
+
+    function toggleSound() {
+      if (isPlaying) {
+        audio.pause();
+      } else {
+        audio.play();
+      }
+      isPlaying = !isPlaying;
+    }
+  </script>
+</body>
+</html>
